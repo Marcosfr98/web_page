@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+:root {
+  --darkRed: #780000;
+  --red: #c1121f;
+  --beige: #fdf0d5;
+  --darkBlue: #003049;
+  --blue: #669bbc;
+  --yellow: #fca311;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+header {
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  height: 15%;
+  background-color: var(--yellow);
+}
+
+header .logo h1 {
+  text-shadow: 1px 1px 2px black;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+header .mainLinks ul {
+  list-style: none;
+  display: flex;
+}
+
+header .mainLinks ul li a {
+  padding-bottom: 10px;
+  color: white;
+  margin-right: 25px;
+  font-size: 1.5vw;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.5s ease-in-out;
+}
+header .mainLinks ul li a:hover {
+  border-bottom: 1px solid white;
+}
+main {
+  height: 100%;
+  width: 100%;
+}
+main .personalInfo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .personalInfo .social_medias {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+main .personalInfo .social_medias a img {
+  background-color: white;
+  padding: 15px;
+  width: 75px;
+  border-radius: 15px;
+}
+main .personalInfo .left {
+  background-color: var(--darkBlue);
+  padding: 50px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+main .personalInfo .right {
+  position: relative;
+  background-color: var(--darkBlue);
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+main .personalInfo .right img {
+  box-shadow: 2px 2px 15px black;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  right: 25%;
+  z-index: 100;
+  border-radius: 50%;
+}
+main .personalInfo .right .line {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-color: var(--blue);
+}
+main .tecnologias {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: var(--darkRed);
+}
+main .tecnologias .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+  width: 100%;
+}
+main .tecnologias .iconsTecnologias {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80%;
+}
+main .tecnologias .iconsTecnologias .left {
+  padding: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+main .tecnologias .iconsTecnologias img {
+  width: 75px;
+  height: 75px;
+  margin: 15px;
+}
+main .tecnologias .iconsTecnologias p {
+  color: white;
+  font-size: 1vw;
+}
+main .tecnologias .iconsTecnologias .right {
+  padding: 50px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+main .tecnologias .iconsTecnologias .right div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: calc(100% / 3);
+}
+main .tecnologias .iconsTecnologias .left div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: calc(100% / 3);
+}
+main .repos {
+  height: 100%;
+  width: 100%;
+  background-color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main .repos .left,
+main .repos .right {
+  padding: 25px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+main .repos .right {
+  background-color: #43aa8b;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+  z-index: 25;
+}
+main .repos .left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+main .repos .left .top,
+main .repos .right .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50%;
+  width: 100%;
+}
+main .repos .left .top .cardForTheEachRepo,
+main .repos .right .bottom .cardForTheEachRepo {
+  border-radius: 15px;
+  width: 40%;
+  height: 75%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  box-shadow: 1px 1px 15px black;
+}
+main .repos .cardForTheEachRepo .title {
+  padding: 15px;
+  background-color: #43aa8b;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+main .repos .cardForTheEachRepo .title img {
+  object-fit: scale-down;
+  width: 75%;
+  height: 75%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 100%;
+}
+main .repos .cardForTheEachRepo .body {
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+main .sendMeAnEmail {
+  padding: 50px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #495057;
+}
+main .sendMeAnEmail form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+main .sendMeAnEmail form input {
+  width: 100%;
+  height: 4vw;
+  padding: 0px 20px;
+  border: 0px;
+  border-radius: 15px;
+  font-size: 1.5vw;
+}
+main .sendMeAnEmail form textarea {
+  width: 100%;
+  height: 12vw;
+  padding: 20px;
+  border: 0px;
+  border-radius: 15px;
+  resize: none;
+}

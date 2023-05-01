@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Marcos Freitas - Desenvolvedor Mobile</title>
+  </head>
+  <body>
+    <div
+      onclick="voltarTopo()"
+      id="backTop"
+      class="backToTopButton"
+      style="
+        background-color: white;
+        padding: 15px;
+        border-radius: 50%;
+        position: fixed;
+        z-index: 5000;
+        bottom: 50px;
+        right: 50px;
+        animation: all 0.5s ease-in-out;
+        transform: scale(0, 0);
+        box-shadow: 2px 2px 15px black;
+      "
+    >
+      <a href="#topo"><img src="images/arrow-up.png" width="75" /></a>
+    </div>
+    <header id="topo">
+      <div class="logo">
+        <h1>Marcos F.</h1>
+      </div>
+      <div class="mainLinks">
+        <ul>
+          <li>
+            <a href="#home" onclick="mostrarBackButton()">Home</a>
+          </li>
+          <li>
+            <a href="#tech" onclick="mostrarBackButton()">Teconologias</a>
+          </li>
+          <li>
+            <a href="#repos" onclick="mostrarBackButton()">Repositórios</a>
+          </li>
+          <li>
+            <a href="#contato" onclick="mostrarBackButton()">Contato comigo</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="personalInfo" id="home">
+        <div class="left">
+          <h1
+            style="
+              color: #669bbc;
+              text-transform: uppercase;
+              text-shadow: 1px 1px 1px black;
+              font-size: 2vw;
+            "
+          >
+            Marcos Felipe <br />
+            Freitas de Freitas.
+          </h1>
+          <div class="social_medias">
+            <a href="https://www.facebook.com/marcos.fr.182">
+              <img src="images/facebook.png" />
+            </a>
+            <a href="https://www.instagram.com/felipe_2freitas/">
+              <img src="images/instagram.png" />
+            </a>
+            <a href="https://github.com/Marcosfr98">
+              <img src="images/github.png" />
+            </a>
+            <a href="https://www.linkedin.com/in/mffdfreitas98/">
+              <img src="images/linkedin.png" />
+            </a>
+          </div>
+          <h2 style="color: white; font-size: 1.75vw">Desenvolvedor Mobile</h2>
+          <p style="color: white; text-align: justify; font-size: 1.25vw">
+            Sou formado como Técnico em Informática para Internet, atualmente
+            sou estudante do curso Análise e Desenvolvimento de Sistemas. Atuo
+            com desenvolvimento Mobile utilizando a tecnologia Flutter. Busco
+            estar evoluindo como programador, profissional e como pessoa. Estou
+            sempre me atualizando sobre as novas tecnologias do mercado.
+            Tecnologia é a minha paixão, faço com amor e sempre faço o meu
+            melhor.
+          </p>
+        </div>
+        <div class="right">
+          <img src="images/perfil.png" alt="Profile image" />
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="tecnologias" id="tech">
+        <div class="title">
+          <h1
+            style="
+              color: white;
+              text-transform: uppercase;
+              text-shadow: 1px 1px 1px black;
+              font-size: 3vw;
+            "
+          >
+            Tecnologias que eu trabalho:
+          </h1>
+        </div>
+        <div class="iconsTecnologias">
+          <div class="left">
+            <div class="react">
+              <img src="images/react.png" alt="React Native" />
+              <p>
+                <strong>React Native</strong>
+                - é uma estrutura de software de interface do usuário de código
+                aberto criada pela Meta Platforms, Inc. Ele é usado para
+                desenvolver aplicativos para Android, Android TV, iOS, macOS,
+                tvOS, Web, Windows e UWP, permitindo que os desenvolvedores usem
+                a estrutura React junto com capacidades nativas da plataforma.
+              </p>
+            </div>
+            <div class="flutter">
+              <img src="images/flutter.png" alt="Flutter" />
+              <p>
+                <strong>Flutter</strong>
+                - é um kit de desenvolvimento de interface de usuário (UI
+                toolkit e framework), de código aberto, criado pela empresa
+                Google em 2015, baseado na linguagem de programação Dart, que
+                possibilita a criação de aplicativos compilados nativamente,
+                para os sistemas operacionais Android, iOS, Windows, Mac, Linux
+                e Web.
+              </p>
+            </div>
+            <div class="java">
+              <img src="images/java.png" alt="Java" />
+              <p>
+                <strong>Java</strong>
+                - é uma linguagem de programação de alto nível, baseada em
+                classes e orientada a objetos, projetada para ter o menor número
+                possível de dependências de implementação.
+              </p>
+            </div>
+          </div>
+          <div class="right">
+            <div class="html">
+              <img src="images/html.png" alt="HTML" />
+              <p>
+                <strong>HTML5</strong>
+                - é uma linguagem de marcação usada para estruturar e apresentar
+                conteúdo na World Wide Web. É a quinta e última versão HTML
+                importante que é uma recomendação do World Wide Web Consortium.
+                A especificação atual é conhecida como HTML Living Standard
+              </p>
+            </div>
+            <div class="css">
+              <img src="images/css.png" alt="CSS" />
+              <p>
+                <strong>CSS3</strong>
+                - é a terceira mais nova versão das famosas Cascading Style
+                Sheets (ou simplesmente CSS), pela qual se define estilos para
+                um projeto web (página de internet). Com efeitos de transição,
+                imagem, imagem de fundo/background e outros, pode-se criar
+                estilos únicos para seus projetos web, alterando diversos
+                aspectos de design no layout da página.
+              </p>
+            </div>
+            <div class="js">
+              <img src="images/js.png" alt="JavaScript" />
+              <p>
+                <strong> JavaScript </strong>
+                - muitas vezes abreviado como JS, é uma linguagem de programação
+                que é uma das principais tecnologias da World Wide Web,
+                juntamente com HTML e CSS. A partir de 2022, 98% dos sites usam
+                JavaScript no lado do cliente para o comportamento da página da
+                web, muitas vezes incorporando bibliotecas de terceiros.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="repos" id="repos">
+        <div class="left">
+          <h1 style="color: white; font-size: 2vw">Projetos pessoais</h1>
+          <div class="top">
+            <div class="cardForTheEachRepo">
+              <div class="title">
+                <img src="images/developer1.png" />
+              </div>
+              <div class="body">
+                <p style="text-align: center; font-size: 1vw">
+                  <strong>Busca CEP</strong>
+                  Criado com a tecnologia React Native (JS).
+                </p>
+                <a
+                  href="#"
+                  style="
+                    background-color: #43aa8b;
+                    color: white;
+                    font-size: 16px;
+                    padding: 5px 10px;
+                    text-decoration: none;
+                    border-radius: 15px;
+                  "
+                  >Saiba mais</a
+                >
+              </div>
+            </div>
+            <div class="cardForTheEachRepo">
+              <div class="title">
+                <img src="images/developer2.png" />
+              </div>
+              <div class="body">
+                <p style="text-align: center; font-size: 1vw">
+                  <strong>Álcool ou Gasolina</strong>
+                  Criado com a tecnologia React Native (JS).
+                </p>
+                <a
+                  href="#"
+                  style="
+                    background-color: #43aa8b;
+                    color: white;
+                    font-size: 16px;
+                    padding: 5px 10px;
+                    text-decoration: none;
+                    border-radius: 15px;
+                  "
+                  >Saiba mais</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <p style="font-size: 1.5vw; color: white; text-align: justify">
+              Estes são projetos que eu fiz por conta própria. Segui as
+              orientações de cursos que eu fiz. Álcool e Gasolina é um projeto
+              simples que eu fiz usando a tecnologia React Native. Basicamento
+              compara qual combustível é melhor baseado no preço por litro.
+              Busca CEP, basicamente, faz um requisição HTTP para a API
+              viacep.com.br e faz um setState nas variáveis: bairro, rua e UF.
+            </p>
+          </div>
+        </div>
+        <div class="right">
+          <h1 style="color: white; font-size: 2vw">Projetos empresariais</h1>
+          <div class="top">
+            <p style="font-size: 1.5vw; color: white; text-align: justify">
+              Estes dois projetos eu fiz na empresa em que trabalhei.
+              Receituário Eletrônico possibilita o usuário prescrever receitas
+              médicas utilizando certificados digitais. Todas as funcionalidades
+              foram feitas via requisição HTTP. Meu colega fez as rotas e as
+              lógicas de cada um. Eu simplesmente fazia requisições HTTP para
+              receber os dados.
+            </p>
+          </div>
+          <div class="bottom">
+            <div class="cardForTheEachRepo">
+              <div class="title" style="background-color: #669bbc">
+                <img src="images/developer3.png" />
+              </div>
+              <div class="body">
+                <p style="text-align: center; font-size: 1vw">
+                  <strong>Receituário Eletrônico</strong>
+                  Criado com a tecnologia Flutter.
+                </p>
+                <a
+                  href="#"
+                  style="
+                    background-color: #669bbc;
+                    color: white;
+                    font-size: 16px;
+                    padding: 5px 10px;
+                    text-decoration: none;
+                    border-radius: 15px;
+                  "
+                  >Saiba mais</a
+                >
+              </div>
+            </div>
+            <div class="cardForTheEachRepo">
+              <div class="title" style="background-color: #669bbc">
+                <img src="images/developer4.png" />
+              </div>
+              <div class="body">
+                <p style="text-align: center; font-size: 1vw">
+                  <strong>Protocolador</strong>
+                  Criado com a tecnologia Android (Java)
+                </p>
+                <a
+                  href="#"
+                  style="
+                    background-color: #669bbc;
+                    color: white;
+                    font-size: 16px;
+                    padding: 5px 10px;
+                    text-decoration: none;
+                    border-radius: 15px;
+                  "
+                  >Saiba mais</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sendMeAnEmail" id="contato">
+        <h1 style="color: white; font-size: 2vw">Me envie uma mensagem! :D</h1>
+        <form action="" method="POST">
+          <input type="text" placeholder="Insira o seu nome completo" />
+          <input type="email" placeholder="Insira o seu e-mail" />
+          <input type="text" placeholder="Insira o seu número para contato" />
+          <textarea></textarea>
+          <input
+            type="submit"
+            value="Enviar"
+            style="background-color: #3c6e71; color: white; font-size: 1.5vw"
+          />
+        </form>
+      </div>
+    </main>
+    <footer></footer>
+    <script>
+      function mostrarBackButton() {
+        var element = document.getElementById("backTop");
+        element.style.transform = "scale(1,1)";
+      }
+      function voltarTopo() {
+        var element = document.getElementById("backTop");
+        element.style.transform = "scale(0,0)";
+      }
+    </script>
+  </body>
+</html>
