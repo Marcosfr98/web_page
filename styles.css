@@ -228,7 +228,7 @@ main .repos .left .top .cardForTheEachRepo,
 main .repos .right .bottom .cardForTheEachRepo {
   border-radius: 15px;
   width: 40%;
-  height: 75%;
+  height: 100%;
   background-color: white;
   display: flex;
   align-items: center;
@@ -250,17 +250,14 @@ main .repos .cardForTheEachRepo .title {
 }
 main .repos .cardForTheEachRepo .title img {
   object-fit: scale-down;
-  width: 75%;
-  height: 75%;
-  background-color: white;
-  padding: 10px;
-  border-radius: 100%;
+  width: 100%;
+  height: 100%;
 }
 main .repos .cardForTheEachRepo .body {
   width: 100%;
   height: 50%;
   background-color: white;
-  padding: 10px;
+  padding: 25px;
   border-radius: 100%;
   display: flex;
   align-items: center;
@@ -277,27 +274,64 @@ main .sendMeAnEmail {
   flex-direction: column;
   background-color: #495057;
 }
-main .sendMeAnEmail form {
+main .sendMeAnEmail .form-wrapper{
+  width: 75%;
+  height: 75%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-  height: 100%;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 25px;
+}
+main .sendMeAnEmail .form-wrapper .left, main .sendMeAnEmail .form-wrapper .right{
   width: 50%;
+  height: 100%;
 }
-main .sendMeAnEmail form input {
+main .sendMeAnEmail .form-wrapper .left img{
   width: 100%;
-  height: 4vw;
-  padding: 0px 20px;
-  border: 0px;
-  border-radius: 15px;
-  font-size: 1.5vw;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
-main .sendMeAnEmail form textarea {
+
+main .sendMeAnEmail .form-wrapper .right form{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  flex-direction: column;
   width: 100%;
-  height: 12vw;
-  padding: 20px;
-  border: 0px;
-  border-radius: 15px;
+  height: 100%;
+}
+
+main .sendMeAnEmail .form-wrapper .right form input{
+  width: 90%;
+  height: 50px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 0px 15px;
+  color: black;
+}
+main .sendMeAnEmail .form-wrapper .right form input[type="submit"]{
+  background-color:deepskyblue;
+  color: white;
+  font-size: 18px;
+}
+main .sendMeAnEmail .form-wrapper .right form textarea{
+  width: 90%;
+  height: 200px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  color: black;
   resize: none;
+}
+
+main .sendMeAnEmail .form-wrapper .right form h1{
+  color: black;
+  font-size: 2vw;
 }

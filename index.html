@@ -8,25 +8,6 @@
     <title>Marcos Freitas - Desenvolvedor Mobile</title>
   </head>
   <body>
-    <div
-      onclick="voltarTopo()"
-      id="backTop"
-      class="backToTopButton"
-      style="
-        background-color: white;
-        padding: 15px;
-        border-radius: 50%;
-        position: fixed;
-        z-index: 5000;
-        bottom: 50px;
-        right: 50px;
-        animation: all 0.5s ease-in-out;
-        transform: scale(0, 0);
-        box-shadow: 2px 2px 15px black;
-      "
-    >
-      <a href="#topo"><img src="images/arrow-up.png" width="75" /></a>
-    </div>
     <header id="topo">
       <div class="logo">
         <h1>Marcos F.</h1>
@@ -34,16 +15,16 @@
       <div class="mainLinks">
         <ul>
           <li>
-            <a href="#home" onclick="mostrarBackButton()">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#tech" onclick="mostrarBackButton()">Teconologias</a>
+            <a href="#tech">Teconologias</a>
           </li>
           <li>
-            <a href="#repos" onclick="mostrarBackButton()">Repositórios</a>
+            <a href="#repos">Repositórios</a>
           </li>
           <li>
-            <a href="#contato" onclick="mostrarBackButton()">Contato comigo</a>
+            <a href="#contato">Contato comigo</a>
           </li>
         </ul>
       </div>
@@ -63,16 +44,16 @@
             Freitas de Freitas.
           </h1>
           <div class="social_medias">
-            <a href="https://www.facebook.com/marcos.fr.182">
+            <a href="https://www.facebook.com/marcos.fr.182" target="_blank">
               <img src="images/facebook.png" />
             </a>
-            <a href="https://www.instagram.com/felipe_2freitas/">
+            <a href="https://www.instagram.com/felipe_2freitas/" target="_blank">
               <img src="images/instagram.png" />
             </a>
-            <a href="https://github.com/Marcosfr98">
+            <a href="https://github.com/Marcosfr98" target="_blank">
               <img src="images/github.png" />
             </a>
-            <a href="https://www.linkedin.com/in/mffdfreitas98/">
+            <a href="https://www.linkedin.com/in/mffdfreitas98/" target="_blank">
               <img src="images/linkedin.png" />
             </a>
           </div>
@@ -80,7 +61,7 @@
           <p style="color: white; text-align: justify; font-size: 1.25vw">
             Sou formado como Técnico em Informática para Internet, atualmente
             sou estudante do curso Análise e Desenvolvimento de Sistemas. Atuo
-            com desenvolvimento Mobile utilizando a tecnologia Flutter. Busco
+            com desenvolvimento Mobile utilizando as tecnologias Flutter e React Native. Busco
             estar evoluindo como programador, profissional e como pessoa. Estou
             sempre me atualizando sobre as novas tecnologias do mercado.
             Tecnologia é a minha paixão, faço com amor e sempre faço o meu
@@ -196,7 +177,7 @@
                     background-color: #43aa8b;
                     color: white;
                     font-size: 16px;
-                    padding: 5px 10px;
+                    padding: 15px 35px;
                     text-decoration: none;
                     border-radius: 15px;
                   "
@@ -206,7 +187,7 @@
             </div>
             <div class="cardForTheEachRepo">
               <div class="title">
-                <img src="images/developer2.png" />
+                <img src="images/alcool_gasolina_qr_code.PNG" />
               </div>
               <div class="body">
                 <p style="text-align: center; font-size: 1vw">
@@ -219,7 +200,7 @@
                     background-color: #43aa8b;
                     color: white;
                     font-size: 16px;
-                    padding: 5px 10px;
+                    padding: 15px 35px;
                     text-decoration: none;
                     border-radius: 15px;
                   "
@@ -240,7 +221,7 @@
           </div>
         </div>
         <div class="right">
-          <h1 style="color: white; font-size: 2vw">Projetos empresariais</h1>
+          <h1 style="color: white; font-size: 2vw; align-self: flex-start;">Projetos empresariais</h1>
           <div class="top">
             <p style="font-size: 1.5vw; color: white; text-align: justify">
               Estes dois projetos eu fiz na empresa em que trabalhei.
@@ -267,7 +248,7 @@
                     background-color: #669bbc;
                     color: white;
                     font-size: 16px;
-                    padding: 5px 10px;
+                    padding: 15px 35px;
                     text-decoration: none;
                     border-radius: 15px;
                   "
@@ -290,7 +271,7 @@
                     background-color: #669bbc;
                     color: white;
                     font-size: 16px;
-                    padding: 5px 10px;
+                    padding: 15px 35px;
                     text-decoration: none;
                     border-radius: 15px;
                   "
@@ -302,18 +283,26 @@
         </div>
       </div>
       <div class="sendMeAnEmail" id="contato">
-        <h1 style="color: white; font-size: 2vw">Me envie uma mensagem! :D</h1>
-        <form action="" method="POST">
-          <input type="text" placeholder="Insira o seu nome completo" />
-          <input type="email" placeholder="Insira o seu e-mail" />
-          <input type="text" placeholder="Insira o seu número para contato" />
-          <textarea></textarea>
-          <input
-            type="submit"
-            value="Enviar"
-            style="background-color: #3c6e71; color: white; font-size: 1.5vw"
-          />
-        </form>
+        <div class="form-wrapper">
+          <div class="left">
+            <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+          </div>
+          <div class="right">
+            <form action="" method="POST">
+              <h1>
+                Me envie uma mensagem! :D
+              </h1>
+              <input type="text" placeholder="Insira o seu nome completo" />
+              <input type="email" placeholder="Insira o seu e-mail" />
+              <input type="text" placeholder="Insira o seu número para contato" />
+              <textarea></textarea>
+              <input
+                type="submit"
+                value="Enviar"
+              />
+            </form>
+          </div>
+        </div>
       </div>
     </main>
     <footer></footer>
